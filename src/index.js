@@ -18,17 +18,17 @@ client.on("message", async (msg) => {
         );
         if (role) {
           await msg.member.roles.add(role);
-          await msg.channel.send("> <@" + userId + ">, you are in!");
+          await msg.channel.send("> **<@" + userId + ">, you are in!**");
         } else {
           await msg.channel.send(
-            "> <@" + userId + ">, cannot add you to the role now."
+            "> **<@" + userId + ">, cannot add you to the role now.**"
           );
         }
       } else {
         await msg.channel.send(
-          "> <@" +
+          "> **<@" +
             userId +
-            ">, you should've followed these twitters:\n" +
+            ">, you should've followed these twitters:**\n" +
             "> @LevXDAOhGeez\n" +
             "> @Sushibtoken\n" +
             "> @MunchkinLFG\n" +
