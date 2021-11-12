@@ -9,7 +9,6 @@
   "license": "MIT",
   "scripts": {
     "start": "node src",
-    "prepublish": "tsc",
     "deploy": "git push heroku master",
     "test": "jest"
   },
