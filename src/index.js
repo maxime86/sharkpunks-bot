@@ -34,7 +34,7 @@ client.on("message", async (msg) => {
         await msg.channel.send(
           "> <@" +
             userId +
-            ">, you should've followed these twitters:**\n" +
+            ">, you should've followed these twitters:\n" +
             "> @LevXDAOhGeez\n" +
             "> @Sushibtoken\n" +
             "> @MunchkinLFG\n" +
