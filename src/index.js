@@ -43,12 +43,12 @@ client.on("message", async (msg) => {
         );
       }
     } else {
-      await msg.delete();
-      await msg.channel.send(
-        "> **<@" +
+      await msg.delete({
+        reason:
+          "> **<@" +
           userId +
-          ">, The only thing you can say here is `!brainwash-me`."
-      );
+          ">, The only thing you can say here is `!brainwash-me`.",
+      });
     }
   }
 });
