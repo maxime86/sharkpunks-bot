@@ -42,13 +42,13 @@ client.on("message", async (msg) => {
             "> @maid_coin"
         );
       }
-    } else {
-      await msg.delete({
-        reason:
-          "> <@" +
-          userId +
-          ">, The only thing you can say here is `!brainwash-me`.",
-      });
+      // } else {
+      //   await msg.delete({
+      //     reason:
+      //       "> <@" +
+      //       userId +
+      //       ">, The only thing you can say here is `!brainwash-me`.",
+      //   });
     }
   }
 });
