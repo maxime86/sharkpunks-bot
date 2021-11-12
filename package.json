@@ -2,7 +2,7 @@
   "name": "@levxdao/discord-bot",
   "version": "1.0.0",
   "description": "Discord bot for LevX DAO",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/levxdao/discord-bot.git",
   "author": "LevX <team@levx.io>",
@@ -10,6 +10,7 @@
   "scripts": {
     "start": "node src",
     "prepublish": "tsc",
+    "deploy": "git push heroku master",
     "test": "jest"
   },
   "lint-staged": {
