@@ -32,7 +32,7 @@ client.on("message", async (msg) => {
         }
       } else {
         await msg.channel.send(
-          "> **<@" +
+          "> <@" +
             userId +
             ">, you should've followed these twitters:**\n" +
             "> @LevXDAOhGeez\n" +
