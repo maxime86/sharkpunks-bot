@@ -17,6 +17,7 @@ client.on("message", async (msg) => {
           (role) => role.id === I_DO_AS_THE_DICTATOR_GUIDES_ROLE_ID
         );
         if (role) {
+          await msg.member.roles.add(role);
           await msg.channel.send("> <@" + userId + ">, you are in!");
         } else {
           await msg.channel.send(
