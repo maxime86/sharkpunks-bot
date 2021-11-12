@@ -28,8 +28,7 @@ client.on("message", async (msg) => {
         await msg.channel.send(
           "> <@" +
             userId +
-            ">, you didn't fulfill your duty:\n" +
-            "> Follow these twitters:\n" +
+            ">, you should've followed these twitters:\n" +
             "> @LevXDAOhGeez\n" +
             "> @Sushibtoken\n" +
             "> @MunchkinLFG\n" +
