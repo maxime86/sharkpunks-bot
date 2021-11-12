@@ -9,9 +9,9 @@ client.on("ready", () => {
 });
 
 client.on("message", async (msg) => {
+  const userId = msg.author.id;
   switch (msg.content) {
     case "!brainwash-me":
-      const userId = msg.author.id;
       if (list.includes(userId)) {
         const role = msg.guild.roles.cache.find(
           (role) => role.id === I_DO_AS_THE_DICTATOR_GUIDES_ROLE_ID
@@ -43,7 +43,13 @@ client.on("message", async (msg) => {
         );
       }
       break;
-    //our meme command below
+    default:
+      await msg.delete();
+      await msg.channel.send(
+        "> **<@" +
+          userId +
+          ">, The only thing you can say here is `!brainwash-me`."
+      );
   }
 });
 
