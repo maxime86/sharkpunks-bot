@@ -18,7 +18,13 @@ client.on("message", async (msg) => {
         );
         if (role) {
           await msg.member.roles.add(role);
-          await msg.channel.send("> **<@" + userId + ">, you are in!**");
+          await msg.channel.send(
+            "> **<@" +
+              userId +
+              ">, you are now a <@&" +
+              I_DO_AS_THE_DICTATOR_GUIDES_ROLE_ID +
+              ">!**"
+          );
         } else {
           await msg.channel.send(
             "> **<@" + userId + ">, cannot add you to the role now.**"
