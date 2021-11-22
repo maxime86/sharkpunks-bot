@@ -1,5 +1,5 @@
 const list = require("./i-do-as-the-dictator-guides.json");
-const { I_DO_AS_THE_DICTATOR_GUIDES_ROLE_ID } = require("./constants");
+const { I_DO_AS_THE_DICTATOR_GUIDES_ROLE_ID } = require("../constants");
 
 module.exports = async (msg) => {
   const userId = msg.author.id;
