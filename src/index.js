@@ -12,7 +12,7 @@ client.on("message", async (msg) => {
   if (msg.content === "!brainwash-me") {
     await brainwashMe();
   } else if (msg.content.toLowerCase().match(/wh?en/)) {
-    await msg.channel.send({
+    await msg.channel.send("idk", {
       reply: msg,
       files: [
         "https://cdn.discordapp.com/attachments/911405391747883019/911670069124268072/unknown.gif",
