@@ -1,6 +1,7 @@
 const { Client } = require("discord.js");
 const { DISCORD_TOKEN } = require("./constants");
 const myInvites = require("./commands/myInvites");
+const randomShark = require("./commands/randomShark");
 
 const client = new Client();
 
@@ -11,6 +12,8 @@ client.on("ready", () => {
 client.on("message", async (msg) => {
   if (msg.content === "!my-invites") {
     await myInvites(msg);
+  } else if (msg.content === "!random-shark") {
+    await randomShark(msg);
   }
 });
 
