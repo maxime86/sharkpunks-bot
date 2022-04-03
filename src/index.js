@@ -1,6 +1,7 @@
 const { Client } = require("discord.js");
 const { DISCORD_TOKEN } = require("./constants");
 const randomShark = require("./commands/randomShark");
+const floorPrice = require("./commands/floorPrice");
 
 const client = new Client();
 
@@ -11,6 +12,8 @@ client.on("ready", () => {
 client.on("message", async (msg) => {
   if (msg.content === "!random-shark") {
     await randomShark(msg);
+  } else if (msg.content == "!floor-price") {
+    await floorPrice(msg);
   } else if (msg.content === "!rank") {
     await msg.reply(`🔥🔥🔥`, {
       reply: msg,
